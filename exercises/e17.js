@@ -6,7 +6,14 @@
 // NOTE: You can NOT use the array.includes() method in your code
 
 export function doesArrayInclude(array, value) {
-  // Your code goes here...
+
+  for (let letter of array) {
+    if (letter === value) {
+      return true;
+    };
+  };
+
+  return false;
 
 }
 

@@ -6,7 +6,15 @@
 // NOTE: You can NOT use the array.flat() method in your code
 
 export function flatArrays(array) {
-  // Your code goes here...
+  let result = [];
+
+  for (let arr of array) {
+    for (let letter of arr) {
+      result.push(letter);
+    }
+  }
+
+  return result;
 
 }
 

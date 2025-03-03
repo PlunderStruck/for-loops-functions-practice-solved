@@ -9,9 +9,12 @@
  * */
 
 export function getAverage(array) {
-  // Your code goes here...
-
-}
+  let sum = 0;
+  for (let elem of array) {
+    sum = sum + elem;
+  };
+  return sum / array.length;
+};
 
 
 /** 
@@ -22,9 +25,14 @@ export function getAverage(array) {
  * */ 
 
 export function getStringSum(str) {
-  // Your code goes here...
-
-}
+  let sum = 0;
+  for (let elem of str) {
+    if (elem >= '0' && elem <= '9') {
+      sum += Number(elem);
+    };
+  };
+  return sum
+};
 
 
 // === TEST YOURSELF ===
